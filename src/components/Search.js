@@ -77,3 +77,4 @@ class Search extends Component {
   }
 }
 export default Search;
+//   Credits to @Sarah Maris && @Abdul Suraj
