@@ -21,8 +21,8 @@ class Search extends Component {
     this.setState({ query });
 
     // if input field is not empty, run search
-    if (query) {
-      BooksAPI.search(query.trim(), 20).then(books => {
+    if (query.trim()) {
+      BooksAPI.search(query, 20).then(books => {
         books.length > 0
           ? this.setState({ searchedBooks: books, searchError: false })
           : this.setState({ searchedBooks: [], searchError: true });

@@ -1,12 +1,12 @@
 import React from 'react'
+import { Link, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import AppBar from './components/AppBar'
 import Search from './components/Search'
 import Shelves from './components/Shelves'
 import AddBookButton from './components/AddBook'
-import { Link, Route, Switch } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom'
 
 class BooksApp extends React.Component {
   state = {

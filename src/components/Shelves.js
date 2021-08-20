@@ -5,7 +5,6 @@ class Shelves extends React.Component {
 
     render() {
         const allBooks = this.props.allBooks;
-        console.log("All Books here...", allBooks)
         const currentlyReading = allBooks.filter(
             book => book.shelf === "currentlyReading"
         );
